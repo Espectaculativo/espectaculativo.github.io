@@ -26,6 +26,7 @@ body {
   a {
     padding: 0 20px;
     margin: 0;
+    color: white;
   }
 
   
@@ -116,3 +117,9 @@ body {
   justify-content: center;
   height: 80%;
   }
+
+/* Rule to remove bullet point from list elements */
+  li.no-bullet {
+    list-style-type: none;
+  }
+
