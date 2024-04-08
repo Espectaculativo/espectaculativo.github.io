@@ -1,6 +1,6 @@
 body {
     font-family: Roboto, sans-serif;
-    background-image: url('https://content.codecademy.com/courses/learn-css-selectors-visual-rules/hypnotize_bg.png');
+    background-color: black;
   }
   
   header {
@@ -34,6 +34,15 @@ body {
     display: flex;
     align-items: center;
     background-image: url('https://content.codecademy.com/projects/personal_portfolio/background.jpeg');
+    background-size: cover;
+    color: #ffffff;
+    height: 100px;
+  }
+
+  .jumbotron-conocimiento {
+    display: flex;
+    align-items: center;
+    background-image: url('Resources\pics\HongosNaranjas.jpeg');
     background-size: cover;
     color: #ffffff;
     height: 100px;
@@ -123,3 +132,11 @@ body {
     list-style-type: none;
   }
 
+/* text color */
+p {
+  color:#fff;
+}
+
+li {
+  color:#fff;
+}
