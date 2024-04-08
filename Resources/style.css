@@ -39,7 +39,7 @@ body {
     height: 100px;
   }
 
-  .jumbotron-conocimiento {
+  #conocimiento-cover {
     display: flex;
     align-items: center;
     background-image: url('Resources\pics\HongosNaranjas.jpeg');
