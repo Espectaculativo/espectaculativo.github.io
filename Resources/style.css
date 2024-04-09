@@ -33,26 +33,31 @@ body {
   .jumbotron {
     display: flex;
     align-items: center;
-    background-image: url('https://content.codecademy.com/projects/personal_portfolio/background.jpeg');
+    background-image: url('https://i.ibb.co/PcyMh6s/Hongos-Naranjas.jpg');
     background-size: cover;
     color: #ffffff;
     height: 100px;
   }
 
+
+
   #conocimiento-cover {
     display: flex;
     align-items: center;
-    background-image: url('Resources\pics\HongosNaranjas.jpeg');
+    background-image: url('https://i.ibb.co/BVf71dW/Hongos-Naranjas-HD-Horizontal.jpg');
     background-size: cover;
+    background-position: center;
     color: #ffffff;
     height: 100px;
   }
+
   
   .jumbotron h2 {
     font-size: 50px;
     font-weight: 700;
     margin: 0;
     color: #fff;
+    text-shadow: 4px 4px 4px black;
   }
   
   .jumbotron h3 {
@@ -60,11 +65,12 @@ body {
     color: #fff;
   }
   
+  /*
   section .row img {
     margin: 0 0 30px;
     width: 100%;
   }
-  
+  */
   .col-md-6 {
     margin: 0 0 30px;
   }
@@ -139,4 +145,13 @@ p {
 
 li {
   color:#fff;
+}
+
+h3, h4 {
+  color:#fff;
+}
+
+ul.jumbo-menu{
+  text-shadow: 4px 4px 4px black;
+  font-weight: bold;
 }
