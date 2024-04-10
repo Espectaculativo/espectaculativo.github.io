@@ -51,6 +51,27 @@ body {
     height: 100px;
   }
 
+  #filosofia-cover {
+    display: flex;
+    align-items: center;
+    background-image: url('https://i.ibb.co/rs94n7m/Monedas-Cover.png');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    height: 100px;
+  }
+
+  #practica-cover {
+    display: flex;
+    align-items: center;
+    background-image: url('https://i.ibb.co/PNCHcXr/Practica-Cover.png');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    height: 100px;
+  }
+
+
   
   .jumbotron h2 {
     font-size: 50px;
