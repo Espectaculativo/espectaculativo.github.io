@@ -5,7 +5,6 @@ body {
   
   header {
     padding: 20px 0;
-    
   }
   
   header .row,
@@ -29,8 +28,14 @@ body {
     padding: 0 20px;
     margin: 0;
     color: white;
+    transition: background-color 0.7s ease;
   }
 
+  a:hover {
+    background-color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+    color: white;
+  }
   
   .jumbotron {
     display: flex;
@@ -72,8 +77,6 @@ body {
     color: #ffffff;
     height: 100px;
   }
-
-
   
   .jumbotron h2 {
     font-size: 50px;
