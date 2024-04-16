@@ -183,3 +183,17 @@ ul.jumbo-menu{
   text-shadow: 4px 4px 4px black;
   font-weight: bold;
 }
+
+/* Snippet to add fade in and fade out effect to title heading*/
+#heading-title {
+  cursor: pointer;
+  transition: opacity 0.5s ease; /* Apply transition on opacity */
+}
+
+.fade-out {
+  opacity: 0; /* Fade out text */
+}
+
+.fade-in {
+  opacity: 1; /* Fade in text */
+}
