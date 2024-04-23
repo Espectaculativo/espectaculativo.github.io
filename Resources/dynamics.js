@@ -1,5 +1,5 @@
 
-//This codes creates the fade-in effect for the heading title
+//Heading Title Toggle with fade in-out effect
 let espectaculativo = document.getElementById("heading-title");
 
 espectaculativo.onclick = function (){
