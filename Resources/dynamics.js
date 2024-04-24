@@ -21,3 +21,28 @@ espectaculativo.onclick = function (){
             }, 500);
     };
 }
+
+//Second language toggle
+function toggleLanguage() {
+    // Select all elements with class "english" or "spanish"
+    const languageElements = document.querySelectorAll('.eng, .spa');
+
+    // Loop through each element
+    languageElements.forEach(element => {
+        // Check the current display state of the element
+        const isEnglish = element.classList.contains('eng');
+
+        // Toggle the content based on the current display state
+        if (isEnglish) {
+            // Element is currently displaying English content, switch to Spanish
+            element.style.display = 'none'; // Hide English
+        } else {
+            // Element is currently displaying Spanish content, switch to English
+            element.style.display = 'block'; // Show English
+        }
+
+        // Toggle the class names to switch between English and Spanish
+        element.classList.toggle('eng');
+        element.classList.toggle('spa');
+    });
+}

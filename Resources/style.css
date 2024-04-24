@@ -197,3 +197,12 @@ ul.jumbo-menu{
 .fade-in {
   opacity: 1; /* Fade in text */
 }
+
+/*CSS for Language Toggle*/
+.spa {
+  display:block
+}
+
+.eng {
+  display:none
+}
