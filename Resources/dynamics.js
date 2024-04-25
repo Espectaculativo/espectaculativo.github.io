@@ -30,10 +30,10 @@ function toggleLanguage() {
     // Loop through each element
     languageElements.forEach(element => {
         // Check the current display state of the element
-        const isEnglish = element.classList.contains('eng');
+        const isSpanish = element.classList.contains('spa');
 
         // Toggle the content based on the current display state
-        if (isEnglish) {
+        if (isSpanish) {
             // Element is currently displaying English content, switch to Spanish
             element.style.display = 'none'; // Hide English
         } else {

@@ -6,31 +6,43 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
     <link href="Resources\style.css" type="text/css" rel="stylesheet">
+    <script src="Resources\dynamics.js" async>
+    </script> 
   </head>
   <body>
 
-<header class= "container">
-<div class = "row">
-<h1 col-sm-6>Lucas Seamanduras</h1>
-<nav class="col-sm-6 text-right">
-<a href="index.html">Yo</a>
-<a href="practica.html">Práctica</a>
-<a href="filosofia.html">Filosofía</a>
-  </nav>
-  </div>
-  </header>
+    <header class= "container">
+      <div class = "row">
+      <h1 col-sm-6 id="heading-title">Lucas Seamanduras</h1>
+      <nav class="col-sm-6 text-right">
+        <button onclick="toggleLanguage()">Toggle Language</button>
+      <a class="spa" href="index.html">Yo</a>
+      <a class="eng" href="index.html">I</a>
+      <a class="spa" href="practica.html">Práctica</a>
+      <a class="eng" href="practica.html">Practice</a>
+      <a class="spa" href="filosofia.html">Filosofía</a>
+      <a class="eng" href="filosofia.html">Philosophy</a>
+        </nav>
+        </div>
+        </header>
 
   <section class="jumbotron" id="conocimiento-cover">
     <div class="container">
       <div class="row">
           <div class="col-sm-7 d-flex align-items-center">
-            <h2>Conocimiento</h2>
+            <h2 class="spa">Conocimiento</h2>
+            <h2 class="eng">Knowledge</h2>
           </div>
           <div class="col-sm-5">
-            <ul class="jumbo-menu">
+            <ul class="jumbo-menu spa">
               <li><p><a href="#software">Software</a></p></li>
               <li><p><a href="#universidad">Universidad</a></p></li>
               <li><p><a href="#cursos">Cursos y Certificaciones</a></p></li>
+            </ul>
+            <ul class="jumbo-menu eng">
+              <li><p><a href="#software">Software</a></p></li>
+              <li><p><a href="#universidad">University</a></p></li>
+              <li><p><a href="#cursos">Courses and Certifications</a></p></li>
             </ul>
           </div>
           </div>
@@ -42,7 +54,8 @@
       <br>
       <div class="row">
         <div class="col-sm-3">
-          <p><b>Programación</b></p>
+          <p class="spa"><b>Programación</b></p>
+          <p class="eng"><b>Coding</b></p>
           <ul>
             <li><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26"></path> <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"></path> <path d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z" fill="white"></path> </g></svg>
                HTML 5</li>
@@ -54,10 +67,11 @@
           </ul>
         </div>
         <div class="col-sm-3">
-          <p><b>Documentación</b></p>
+          <p class="spa"><b>Documentación</b></p>
+          <p class="eng"><b>Documentation</b></p>
                 <ul>
                   <li>Markdown, Confluence</li>
-                  <li>Microsoft, Libre Office y Google Suite</li>
+                  <li>Microsoft, Libre Office, Google Suite</li>
                   <li>Lucidchart, Mural, Miro</li>
                   <li>VS Code, Github, Static Site Generators</li>
                 </ul>
@@ -71,10 +85,12 @@
                   </ul>
         </div>
         <div class="col-sm-3">
-          <p><b>IA & Blockchain</b></p>
+          <p class="spa"><b>IA & Blockchain</b></p>
+          <p class="eng"><b>AI & Blockchain</b></p>
                   <ul>
                     <li>ChatGPT, Dall-E</li>
-                    <li>Wallets, NFTs y Exchanges de las criptomonedas:</li>
+                    <li class="spa">Wallets, NFTs, Exchanges de:</li>
+                    <li class="eng">Wallets, NFTs, Exchanges for:</li>
                     <li class="no-bullet">
                       <ul>
                         <li><svg fill="#000000" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill-rule="evenodd" d="M16 32C7.163 32 0 24.837 0 16S7.163 0 16 0s16 7.163 16 16-7.163 16-16 16zm2.19-6c.993 0 1.917-.206 2.771-.619a4.037 4.037 0 001.91-1.878 6.02 6.02 0 00.629-2.726 7.16 7.16 0 00-.175-1.466c-.108-.55-.353-1.123-.734-1.719-.38-.603-.923-1.077-1.63-1.42-.699-.352-1.328-.527-1.887-.527a3.51 3.51 0 00-.978.229l5.171-5.086-.839-.825-8.431.023V6.412L13.182 6h-2.166v.595l.745.734v2.657H8.5v1.169h3.26v6.277c0 .916.265 1.642.793 2.176.528.535 1.483.802 2.865.802.559 0 1.071-.153 1.537-.458.466-.306.83-.748 1.095-1.329a2.92 2.92 0 00.058-.32.619.619 0 00-.163-.425c-.117-.083-.217-.125-.303-.125a.236.236 0 00-.151.057.342.342 0 00-.117.149 3.76 3.76 0 01-.885.893c-.341.245-.699.367-1.071.367-.482 0-.839-.168-1.072-.504-.233-.336-.35-.764-.35-1.283v-6.277h6.383l-4.612 6.048v.504l1.025-.504c.56-.306 1.025-.458 1.397-.458a2.99 2.99 0 011.584.446c.49.298.858.756 1.107 1.375.256.61.384 1.348.384 2.21 0 .795-.117 1.505-.35 2.131-.232.626-.593 1.1-1.082 1.42a2.93 2.93 0 01-1.643.482c-.434 0-.87-.061-1.304-.184-.435-.114-.753-.309-.955-.584.233-.069.435-.213.606-.435.17-.222.256-.508.256-.86 0-.29-.058-.534-.175-.732a1.27 1.27 0 00-.477-.47 1.497 1.497 0 00-.746-.172c-.295 0-.543.058-.745.172a1.27 1.27 0 00-.477.47c-.117.198-.175.443-.175.733 0 .794.334 1.535 1.001 2.222.668.687 1.732 1.031 3.191 1.031z"></path></g></svg>
@@ -91,20 +107,28 @@
     </div>
 
   <div class="container">
-    <h3 id="universidad">Universidad</h3>
+    <h3 id="universidad" class="spa">Universidad</h3>
+    <h3 id="universidad" class="eng">University</h3>
     <br>
     <div class="row">
       <div class="col-sm-2">
         <img src="https://citecuvp.tij.uabc.mx/wp-content/uploads/2022/10/ISOTIPO-UABC-COLORORIGINAL.png" class="img-fluid">
       </div>
       <div class="col-sm-4">
-        <p class="font-weight-bold center-cell text-center">
+        <p class="font-weight-bold center-cell text-center spa">
           Universidad Autonóma de Baja California</p>
+          <p class="font-weight-bold center-cell text-center eng">
+            Autonomous University of Baja California</p>
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm-6 spa">
         <p class="no-linespace">Licenciatura en Filosofía</p>
         <p class="no-linespace">Mención Honorífica | Mérito Académico 2014-2</p>
         <p class="no-linespace">Licencia Profesional: 9813172</p>
+      </div>
+      <div class="col-sm-6 eng">
+        <p class="no-linespace">Major in Philosophy</p>
+        <p class="no-linespace">Honorable Mention | Academic Merit 2014-2</p>
+        <p class="no-linespace">Professional License: 9813172</p>
       </div>
     </div>
     <br>
@@ -113,14 +137,22 @@
         <img src="https://francia.unam.mx/wp-content/uploads/2021/10/cropped-Logo-UNAM-Dorado-Square.png" class="img-fluid">
       </div>
       <div class="col-sm-4">
-        <p class="font-weight-bold center-cell text-center">
+        <p class="font-weight-bold center-cell text-center spa">
           Universidad Nacional Autónoma de México</p>
+          <p class="font-weight-bold center-cell text-center eng">
+            National Autonomous University of Mexico</p>
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm-6 spa">
         <br>
         <p class="no-linespace">Maestría en Filosofía de la Ciencia</p>
         <p class="no-linespace">Área de investigación: Filosofía de la Ciencia</p>
         <p class="no-linespace">Coordinador del Seminario de Filosofía de la Economía</p>
+      </div>
+      <div class="col-sm-6 eng">
+        <br>
+        <p class="no-linespace">Masters in Philosophy of Science</p>
+        <p class="no-linespace">Research area: Philosophy of Science</p>
+        <p class="no-linespace">Philosophy of Economics Seminar Coordinator</p>
       </div>
     </div>
   </div>
@@ -129,11 +161,14 @@
 <br>
 
 <div class="container">
-  <h3 id="cursos">Cursos y Certificaciones</h3>
+  <h3 id="cursos" class="spa">Cursos y Certificaciones</h3>
+  <h3 id="cursos" class="eng">Courses and Certifications</h3>
   <br>
     <div class="row">
-      <div class="col-sm-6">
-  <h4>🔮 Filosofía</h4>
+
+      <div class="col-sm-6 spa">
+  <h4 class="spa">🔮 Filosofía</h4>
+  <h4 class="eng">🔮 Philosophy</h4>
   <br>
     <p class="no-linespace"><b>Money, Desire & the Body: Economic Exchange & Perversion (2024)</b></p> 
       <p>The New Centre for Research & Practice</p>
@@ -144,8 +179,24 @@
       <p class="no-linespace"><b>Introducción a la Nueva Epistemología (2016)</b></p> 
       <p>Universidad Pedagógica Nacional</p>
     </div>
+
+    <div class="col-sm-6 eng">
+      <h4 class="spa">🔮 Filosofía</h4>
+      <h4 class="eng">🔮 Philosophy</h4>
+      <br>
+        <p class="no-linespace"><b>Money, Desire & the Body: Economic Exchange & Perversion (2024)</b></p> 
+          <p>The New Centre for Research & Practice</p>
+          <p class="no-linespace"><b>La idea de filosofía en la historia (2018)</b></p> 
+          <p>Universidad Nacional Autónoma de México. Facultad de Filosofía y Letras</p>
+          <p class="no-linespace"><b>La ética, el ser humano y la ciencia (2017)</b></p> 
+          <p>Tecnológico Nacional de México</p>
+          <p class="no-linespace"><b>Introducción a la Nueva Epistemología (2016)</b></p> 
+          <p>Universidad Pedagógica Nacional</p>
+        </div>
+
       <div class="col-sm-6">
-  <h4>📡 Tecnología</h4>
+  <h4 class="spa">📡 Tecnología</h4>
+  <h4 class="eng">📡 Technology</h4>
   <br>
     <p class="no-linespace"><b>Introduction to Technical Writing (2022)</b></p> 
       <p>Wizeline Academy</p>
@@ -159,7 +210,8 @@
         </div>
     <div class="row">
       <div class="col-sm-6"><!-- Delete de text-center class to align left -->
-  <h4>📚 Educación</h4>
+  <h4 class="spa">📚 Educación</h4>
+  <h4 class="eng">📚 Education</h4>
   <br>
     <p class="no-linespace"><b>Podcast para el aprendizaje (2020)</b></p> 
         <p>Compummunicate S.C</p>

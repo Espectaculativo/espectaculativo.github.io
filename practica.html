@@ -6,15 +6,23 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
     <link href="Resources\style.css" type="text/css" rel="stylesheet">
+    <script src="Resources\dynamics.js" async></script>
   </head>
+
+
   <body>
+
 <header class= "container">
 <div class = "row">
-<h1 col-sm-6>Lucas Seamanduras</h1>
+<h1 col-sm-6 id="heading-title">Lucas Seamanduras</h1>
 <nav class="col-sm-6 text-right">
-<a href="index.html">Yo</a>
-<a href="conocimiento.html">Conocimiento</a>
-<a href="filosofia.html">Filosofía</a>
+  <button onclick="toggleLanguage()">Toggle Language</button>
+<a class="spa" href="index.html">Yo</a>
+<a class="eng" href="index.html">I</a>
+<a class="spa" href="conocimiento.html">Conocimiento</a>
+<a class="eng" href="conocimiento.html">Knowledge</a>
+<a class="spa" href="filosofia.html">Filosofía</a>
+<a class="eng" href="filosofia.html">Philosophy</a>
   </nav>
   </div>
   </header>
@@ -23,7 +31,8 @@
     <div class="container">
       <div class="row">
           <div class="col-sm-7 d-flex align-items-center">
-            <h2>Práctica</h2>
+            <h2 class="spa">Práctica</h2>
+            <h2 class="eng">Practice</h2>
           </div>
           <div class="col-sm-5">
             <ul class="jumbo-menu">
@@ -37,34 +46,54 @@
 
     <div class="container">
       <h3 id="tech-writing">Technical Writing</h3>
-      <p>En 2021 me introduje al mundo del software a través del Technical Writing. Esta disciplina consiste en comunicar de manera clara, concisa y coherente información especializada a una diversidad de públicos. 
-        La importancia de la transmisión y preservación del conocimiento se ha vuelto central tanto en mi práctica filosófica como profesional, y comparto aquí algunos ejemplos de ello. </p>
+      <p class="spa">En 2021 me introduje al mundo del software a través del Technical Writing. 
+        Esta disciplina consiste en comunicar de manera clara, concisa y coherente información especializada a una diversidad de públicos. 
+        La importancia de la transmisión y preservación del conocimiento se ha vuelto central
+         tanto en mi práctica filosófica como profesional, y comparto aquí algunos ejemplos de ello. </p>
+         <p class="eng">In 2021, I embarked on my journey into the world of software through Technical Writing. This discipline involves communicating specialized information in a clear, concise, and coherent manner to a diverse range of audiences. The importance of knowledge transmission
+          and preservation has become central to both my philosophical and professional practice, and I share here a few examples of this.</p>
       <br>
       <div class="row">
         <div class="col-sm-2">
           <img src="Resources\pics\GuiaInmersionHEN.PNG" alt="Guia-Inmersion-HEN" class="img-fluid">
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 spa">
             <p><b>Guía de Inmersión a Hic et Nunc</b></p>
             <p>Cuando me introduje al mundo de la blockchain, me sorprendió la carencia de información en español. Para ayudar y sumar gente, escribí esta guía sobre cómo comprar la criptomoneda Tezos y usarla en el marketplace Hic et Nunc (ahora Teia.art). 
               Le fue útil a muchas personas de latinoamérica a través de distribución informal en Telegram y Discord.</p>
         </div>
+        <div class="col-sm-4 eng">
+          <p><b>Hic et Nunc Immersion Guide</b></p>
+          <p>Upon entering the blockchain world, I was struck by the scarcity of information in Spanish. To provide support and encouragement, I wrote a guide on how to purchase the Tezos cryptocurrency and use it on the Hic et Nunc marketplace (now Teia.art). 
+            This guide proved beneficial to many individuals in Latin America through informal distribution on Telegram and Discord.</p>
+      </div>
         <div class="col-sm-2">
           <img src="Resources\pics\ConfeccionarPortada2.PNG" alt="Confeccionar-Portada2" class="img-fluid">
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 spa">
             <p><b>Confeccionar Planetas: el metaverso de Hic et Nunc</b></p>
             <p>Informe sobre los esfuerzos de la comunidad de Hic et Nunc para construir un metaverso integrado con su mercados de NFTs. 
               Se realizó a través de entrevistas con los constructores del metaverso e investigación documental en el discord de Hic et Nunc.</p>
         </div>
+        <div class="col-sm-4 eng">
+          <p><b>On Planetcrafting. The Metaverse of Hic et Nunc</b></p>
+          <p>Report on the Hic et Nunc community's efforts to build a metaverse integrated with its NFT marketplace. The research was conducted 
+            through interviews with metaverse builders and extensive documentation analysis within the Hic et Nunc Discord server.</p>
+      </div>
       </div>
       <div class="row mt-5">
         <div class="col-sm-2">
           <img src="Resources\pics\LogoSFE.png" alt="LogoSFE" class="img-fluid">
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 spa">
           <p><b>Video-documentación del Seminario de Filosofía de la Economía</b></p>
           <p>Registro de las conferencias de investigadores invitados al seminario durante el 2021. Realicé edición de video y creación de gráficos para darle identidad y trazabilidad al producto final. 
+            </p>        
+        </div>
+        <div class="col-sm-4 eng">
+          <p><b>Video-documentation for the Philosophy of Economics Seminar</b></p>
+          <p>I was responsible for the video editing and graphic design of the presentations delivered by guest researchers at the 2021 seminar. 
+            My work aimed to establish a consistent visual identity and ensure the traceability of the final product.
             </p>        
         </div>
         <div class="col-sm-2">
@@ -81,23 +110,36 @@
           <div class="col-sm-2">
             <img src="Resources\pics\PentaAvatarCircle.png" alt="Penta-Avatar-Circle" class="img-fluid">
           </div>
-          <div class="col-sm-10">
+          <div class="col-sm-10 spa">
             <h3 id="nftecnologica">🌄🔮📡 NFTecnológica</h3>
-            <p>Nueva Filosofía Tecnológica es un colectivo que busca unir la práctica filosófica con el uso activo de tecnologías. Empezando con Blockchain y extendiéndonos a la Inteligencia Artificial, buscamos filosofar con la tecnología desde la práctica económica y política, con una orientación especulativa e inventiva. 
+            <p>Nueva Filosofía Tecnológica es un colectivo que busca unir la práctica filosófica con el uso activo de tecnologías. Empezando con Blockchain y extendiéndonos a la Inteligencia Artificial, buscamos filosofar con la tecnología desde la práctica económica y política, con una orientación especulativa e inventiva.</p>
 
              <p>Comparto aquí algunos de nuestros proyectos, que pueden revisar a detalle en<a href="https://nftecnologica.xyz/">nftecnologica.xyz</a></p>
               </div>
+          <div class="col-sm-10 eng">
+                <h3 id="nftecnologica">🌄🔮📡 NFTecnológica</h3>
+                <p>Nueva Filosofía Tecnológica (New Technological Philosophy) is a collective that aims to bridge the gap between philosophical practice and the active use of technology. 
+                  Beginning with Blockchain and expanding to Artificial Intelligence, we seek to philosophize with technology from an economic and political perspective, 
+                  with a speculative and inventive orientation.</p>
+    
+                 <p>I share here some of our projects, which you can review in detail at<a href="https://nftecnologica.xyz/">nftecnologica.xyz</a></p>
+                  </div>    
           </div>
       <div class="row mt-5">
         <div class="col-sm-3">
           <img src="Resources\pics\MxE_Oracle_Avatar.png" alt="Mx-E-Oracle-Avatar" class="img-fluid">
           </div>
         <div class="col-sm-6 d-flex justify-content-center align-items-center">
-          <div>
+          <div class="spa">
           <p class=" d-flex justify-content-center align-items-center"><b>Mundos X Encriptar</b></p>
           <p>Una colección de NFTs producto de una lectura colectiva de <i>¿Hay mundo por venir?</i> de Danowski y Viveiros de Castro. 
             Consiste en cuatro objetos NFT que giran en torno a un tema específico: fuego, glitch, tiempo y descanso. 
             Si un coleccionista adquiere los cuatro NFTs, puede abrir el NFT Oráculo que revela provocaciones del filósofo Emmanuel Bisset.</p>
+        </div>
+        <div class="eng">
+          <p class=" d-flex justify-content-center align-items-center"><b>Worlds to Encrypt</b></p>
+          <p>An NFT collection stemming from a collective reading of <i>The Ends of the World</i> by Danowski and Viveiros de Castro. It comprises four NFT objects revolving around specific themes: 
+            fire, glitch, time, and rest. If a collector acquires all four NFTs, they can unlock the Oracle NFT, revealing provocative insights from philosopher Emmanuel Bisset.</p>
         </div>
         </div>
         <div class="col-sm-3">
@@ -110,10 +152,15 @@
           <img src="Resources\pics\BlockchainCosmogram.png" alt="Blockchain-Cosmogram" class="img-fluid">
           </div>
         <div class="col-sm-6 d-flex justify-content-center align-items-center">
-          <div>
+          <div class="spa">
           <p class=" d-flex justify-content-center align-items-center"><b>Potencias de una Tecnología Venidera</b></p>
           <p>Una serie de tres ensayos, vinculados temáticamente por NFTs. Colaboración solicitada por la Revista 404 del Centro de Cultura Digital (CCD, CDMX), 
             donde exploramos los límites de la crítica respecto a la Blockchain y el potencial de la especulación y la invención para fomentar relaciones políticas creativas en la Web3. </p>
+        </div>
+        <div class="eng">
+          <p class=" d-flex justify-content-center align-items-center"><b>Powers of a Technology to Come</b></p>
+          <p>A series of three essays, thematically linked by NFTs. A collaboration requested by Revista 404 of the Centro de Cultura Digital (CCD, CDMX), 
+            where we explore the limits of criticism regarding Blockchain and the potential of speculation and invention to foster creative political relationships in Web3. </p>
         </div>
         </div>
         <div class="col-sm-3 align-items-center">
