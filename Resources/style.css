@@ -225,10 +225,10 @@ ul.jumbo-menu{
   padding: 10px 15px;
   text-align: center;
   transition: 200ms;
-  width: 100%;
-  box-sizing: border-box;
+  width: 20%;
+  box-sizing: content-box;
   border: 0;
-  font-size: 16px;
+  font-size: 14px;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
