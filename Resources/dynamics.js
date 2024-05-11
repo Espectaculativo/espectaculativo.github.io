@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-/*
+ /*
 $(document).ready(function() {
     // Function to update gradient on mousemove
     $('.jumbotron').on('mousemove', function(event) {
@@ -138,7 +138,8 @@ $(document).ready(function() {
       $(this).css('background', 'linear-gradient(to bottom, #ff0000, #0000ff)');
     });
   });
-  */
+
+ 
 
   $(document).ready(function() {
     var lastX, lastY;
@@ -168,3 +169,4 @@ $(document).ready(function() {
       $(this).css('background', 'radial-gradient(circle at ' + lastX + 'px ' + lastY + 'px, #ff0000, #0000ff)');
     });
   });
+  */
