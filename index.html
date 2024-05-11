@@ -1,38 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>My Personal Portfolio</title>
+    <title>Lucas | Espectaculativo</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
     <link href="Resources\style.css" type="text/css" rel="stylesheet">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+    <script src="Resources\dynamics.js" async>
+      </script> 
   </head>
+  
   <body>
+
 <header class= "container">
 <div class = "row">
-<h1 col-sm-6>Lucas Seamanduras</h1>
-<nav class="col-sm-6 text-right">
-<a href="education.html">Education</a>
-<a href="experience.html">Experience</a>
-<a href="experience.html">Philosophy</a>
+<h1 class="col-sm-6" id="heading-title">Lucas Seamanduras</h1>
+<nav class="col-sm-4 text-right">
+  <a class="spa navigation" href="conocimiento.html">Conocimiento</a>
+  <a class="eng navigation" href="conocimiento.html">Knowledge</a>
+  <a class="spa navigation" href="practica.html">Práctica</a>
+  <a class="eng navigation" href="practica.html">Practice</a>
+  <a class="spa navigation" href="filosofia.html">Filosofía</a>
+  <a class="eng navigation" href="filosofia.html">Philosophy</a>
   </nav>
+<div class="col-sm-2 text-right">
+  <button id="toggleButton" onclick="toggleLanguage()"> 🇲🇽 / 🇺🇸</button>
+</div>
   </div>
   </header>
 
 <section class="jumbotron">
     <div class="container">
- <h2> Philosopher | Technical Writer</h2>
- <h2>Blockchain Enthusiast</h2>
+ <h2 class="spa"> Filósofo | Technical Writer</h2>
+ <h2 class="eng"> Philosopher | Technical Writer</h2>
       </div>
     </section>
 
 <div class="container">
    <div class="row">
       <div class="col-4">
-        <img src="https://scontent-qro1-1.xx.fbcdn.net/v/t39.30808-6/270970374_4952180544832622_246166964248301944_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGYStDhW10VQ9xAfGbjybkAqAAGI42Teg2oAAYjjZN6DTuoHU0GgOIlCiOWIBwDnU-7YYDV3d_SaJ3R4rm0VGOr&_nc_ohc=nw7Hs3ck5SYAX8VUXbw&_nc_ht=scontent-qro1-1.xx&oh=00_AfCjr4Fkdp2S-3tpoqaLQrl2D7X8mLdvDkloIK-gWyPEjA&oe=66085412" class="img-fluid">
+        <img src="https://i.ibb.co/4RrG3sq/Profile-Pic-Yellow.jpg" alt="Profile-Pic-Yellow" class="img-fluid">
         </div>
       <div class="col-7">
-        <p>I'm a Philosopher and Technical Writer. My journey from Philosophy to Technology embraces the best qualities of both worlds: critical thinking and analytical approach from philosophy, and an eager curiosity to learn how everything works and how to harness it from technology.</p>
+        <p class="spa">
+          ¡Bienvenide a mi portafolio web! Este portal es tanto un proyecto 
+          para practicar mis conocimientos de programación como un repositorio de mis gustos, intereses e historia. 
+        </p>
+        <p class="eng">
+          Welcome to my web portfolio! This portal is both a place to practice my nascient coding abilities and
+          a repository of my curiosities, knowledge, and history. 
+        </p>
+        <p class="spa">Para guiarte:</p>
+        <ul class="spa">
+          <li>Si quieres echar un vistazo a mis estudios, visita mi<a href="conocimiento.html">conocimiento.</a></li>
+          <li>Si quieres conocer qué cosas he trabajado, entra a mi<a href="practica.html">práctica.</a></li>
+          <li>Y si quieres saber lo que pienso, adéntrate en mi<a href="filosofia.html">filosofía.</a></li>
+        </ul>
+        <p class="eng">To guide you:</p>
+        <ul class="eng">
+          <li>If you want to check what I've studied, visit my<a href="conocimiento.html">knowledge.</a></li>
+          <li>If you want to know the stuff I've worked on, look up my<a href="practica.html">practice.</a></li>
+          <li>If you are intrigued in what I think, immmerse yourself in my<a href="filosofia.html">philosophy.</a></li>
+        </ul>
         
       </div>
       <div class="col-1">
@@ -41,13 +73,14 @@
   </div>
 
 <footer class="container">
- <div class ="col-sm-2">
-  <a href="https://www.linkedin.com/in/lucas-seamanduras-234744b5/" target="_blank">LinkedIn</a>
+ <div class ="col-sm-4">
+  <a href="https://www.linkedin.com/in/lucas-seamanduras-234744b5/" target="_blank"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none" width="18" height="18"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#0A66C2" d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z"></path></g></svg>
+    LinkedIn</a>
   </div>
-  <div class ="col-sm-2">
-<a href="https://nftecnologica.xyz/" target="_blank">NFTecnologica</a>
+  <div class ="col-sm-4">
+<a href="https://nftecnologica.xyz/" target="_blank"><img src="Resources\pics\favicon.ico"> NFTecnologica</a>
   </div>
-  <p class="col-sm-4">&copy; 2019 Espectaculativo</p>
+  <p class="col-sm-4">&copy; 2024 Espectaculativo</p>
       </footer>
   </body>
 </html>

@@ -1,6 +1,7 @@
 body {
     font-family: Roboto, sans-serif;
-    background-image: url('https://content.codecademy.com/courses/learn-css-selectors-visual-rules/hypnotize_bg.png');
+    background-image: url("https://i.ibb.co/zhgSqMZ/Stars-Black-Background.jpg");
+    background-size:contain
   }
   
   header {
@@ -16,6 +17,7 @@ body {
   h1 {
     font-weight: 700;
     margin: 0;
+    color: white;
   }
   
   nav {
@@ -26,23 +28,82 @@ body {
   a {
     padding: 0 20px;
     margin: 0;
+    color: white;
+    border-radius: 15px;
   }
 
-  
+  a:hover {
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+  }
+
+  /*White shadowbox on navigation links*/
+  a.navigation {
+    padding: 0 20px;
+    margin: 0;
+    color: white;
+    transition: box-shadow 0.7s ease, background-color 0.7s ease;
+    border-radius: 15px;
+  }
+
+  a.navigation:hover {
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 0 0 2px rgb(255, 255, 255), 0 3px 8px 0 rgb(255, 255, 255);
+  }
+
   .jumbotron {
     display: flex;
     align-items: center;
-    background-image: url('https://content.codecademy.com/projects/personal_portfolio/background.jpeg');
+    background-image: url('https://i.ibb.co/X4WJZyk/indexbackground.jpg"');
     background-size: cover;
+    background-position: bottom;
     color: #ffffff;
     height: 100px;
   }
-  
+
+
+/*Jumbotron background images*/
+  #conocimiento-cover {
+    display: flex;
+    align-items: center;
+    background-image: url('https://i.ibb.co/BVf71dW/Hongos-Naranjas-HD-Horizontal.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    height: 100px;
+  }
+
+  #filosofia-cover {
+    display: flex;
+    align-items: center;
+    background-image: url('https://i.ibb.co/yV6fdnb/handcoin.jpg');
+    background-size:cover;
+    background-position:center;
+    color: #ffffff;
+    height: 100px;
+  }
+
+  #practica-cover {
+    display: flex;
+    align-items: center;
+    background-image: url('https://i.ibb.co/PNCHcXr/Practica-Cover.png');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    height: 100px;
+  }
+
+
   .jumbotron h2 {
     font-size: 50px;
     font-weight: 700;
     margin: 0;
     color: #fff;
+    text-shadow: 4px 4px 4px black;
   }
   
   .jumbotron h3 {
@@ -50,11 +111,12 @@ body {
     color: #fff;
   }
   
+  /*
   section .row img {
     margin: 0 0 30px;
     width: 100%;
   }
-  
+  */
   .col-md-6 {
     margin: 0 0 30px;
   }
@@ -116,3 +178,81 @@ body {
   justify-content: center;
   height: 80%;
   }
+
+/* Rule to remove bullet point from list elements */
+  li.no-bullet {
+    list-style-type: none;
+  }
+
+/* text color */
+p {
+  color:#fff;
+}
+
+li {
+  color:#fff;
+}
+
+h3, h4 {
+  color:#fff;
+}
+
+ul.jumbo-menu{
+  text-shadow: 4px 4px 4px black;
+  font-weight: bold;
+}
+
+/* Snippet to add fade in and fade out effect to title heading*/
+#heading-title {
+  cursor: pointer;
+  transition: opacity 0.5s ease; /* Apply transition on opacity */
+}
+
+.fade-out {
+  opacity: 0; /* Fade out text */
+}
+
+.fade-in {
+  opacity: 1; /* Fade in text */
+}
+
+/*CSS for Language Toggle*/
+.spa {
+  display:block
+}
+
+.eng {
+  display:none
+}
+
+/*Toggle Button aesthetics*/
+#toggleButton {
+  background-color:rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-align: center;
+  transition: 200ms;
+  width: 40%;
+  box-sizing: content-box;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#toggleButton:not(:disabled):hover,
+#toggleButton:not(:disabled):focus {
+  outline: 0;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 2px rgb(255, 255, 255), 0 3px 8px 0 rgb(255, 255, 255);
+}
+
+#toggleButton:disabled {
+  filter: saturate(0.2) opacity(0.5);
+  -webkit-filter: saturate(0.2) opacity(0.5);
+  cursor: not-allowed;
+}
