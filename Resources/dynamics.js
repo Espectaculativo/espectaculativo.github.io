@@ -124,6 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 */
 
+//Second toggle attempt snippet
 // Function to show English content and store language preference
 function showEnglishContent(contentEnglish, contentSpanish) {
     contentEnglish.forEach(element => {
