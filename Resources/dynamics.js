@@ -1,4 +1,4 @@
-
+/*
 //Heading Title Toggle with fade in-out effect
 let espectaculativo = document.getElementById("heading-title");
 
@@ -21,7 +21,7 @@ espectaculativo.onclick = function (){
             }, 500);
     };
 }
-
+*/
 /*
 //Second language toggle
 function toggleLanguage() {
