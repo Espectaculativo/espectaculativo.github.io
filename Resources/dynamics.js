@@ -67,6 +67,7 @@ function toggleLanguage() {
     }
 }
 
+/*
 // Function to show English content and store language preference
 function showEnglishContent(contentEnglish, contentSpanish) {
     contentEnglish.forEach(element => {
@@ -121,52 +122,68 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+*/
 
- /*
-$(document).ready(function() {
-    // Function to update gradient on mousemove
-    $('.jumbotron').on('mousemove', function(event) {
-      var x = event.pageX - $(this).offset().left;
-      var y = event.pageY - $(this).offset().top;
-      var radius = 400;
-      $(this).css('background', 'radial-gradient(circle at ' + x + 'px ' + y + 'px, #ff0000, #0000ff ' + radius + 'px)');
+// Function to show English content and store language preference
+function showEnglishContent(contentEnglish, contentSpanish) {
+    contentEnglish.forEach(element => {
+        element.style.display = 'block'; // Show English content
+        element.classList.add('eng'); // Add English class
+        element.classList.remove('spa'); // Remove Spanish class
     });
-  
-    // Reset gradient on mouseout
-    $('.jumbotron').on('mouseout', function() {
-        //Linear background gradient
-      $(this).css('background', 'linear-gradient(to bottom, #ff0000, #0000ff)');
-    });
-  });
 
- 
-
-  $(document).ready(function() {
-    var lastX, lastY;
-  
-    // Function to update gradient on mousemove
-    $('.jumbotron').on('mousemove', function(event) {
-      var x = event.pageX - $(this).offset().left;
-      var y = event.pageY - $(this).offset().top;
-      var radius = 300;
-      lastX = x;
-      lastY = y;
-      $(this).css('background', 'radial-gradient(circle at ' + x + 'px ' + y + 'px, #ff0000, #0000ff ' + radius + 'px)');
+    contentSpanish.forEach(element => {
+        element.style.display = 'none'; // Hide Spanish content
+        element.classList.remove('eng'); // Remove English class
+        element.classList.add('spa'); // Add Spanish class
     });
-  
-    // Function to reset gradient
-    function resetGradient() {
-      $('.jumbotron').css('background', 'linear-gradient(to bottom, #ff0000, #0000ff)');
+
+    // Store language preference in localStorage
+    localStorage.setItem('preferredLanguage', 'english');
+}
+
+// Function to show Spanish content and store language preference
+function showSpanishContent(contentEnglish, contentSpanish) {
+    contentEnglish.forEach(element => {
+        element.style.display = 'none'; // Hide English content
+        element.classList.remove('eng'); // Remove English class
+        element.classList.add('spa'); // Add Spanish class
+    });
+
+    contentSpanish.forEach(element => {
+        element.style.display = 'block'; // Show Spanish content
+        element.classList.add('eng'); // Add English class
+        element.classList.remove('spa'); // Remove Spanish class
+    });
+
+    // Store language preference in localStorage
+    localStorage.setItem('preferredLanguage', 'spanish');
+}
+
+// Document ready event listener to toggle language based on stored preference
+document.addEventListener('DOMContentLoaded', () => {
+    // Check if language preference is stored in localStorage
+    const currentLanguage = localStorage.getItem('preferredLanguage');
+    
+    // Check if the preference is English, if not, default to Spanish
+    if (currentLanguage === 'english') {
+        showEnglishContent(document.querySelectorAll('.eng'), document.querySelectorAll('.spa'));
+    } else {
+        showSpanishContent(document.querySelectorAll('.eng'), document.querySelectorAll('.spa'));
     }
-  
-    // Reset gradient on mouseout
-    $('.jumbotron').on('mouseout', function() {
-      resetGradient();
-    });
-  
-    // Keep gradient in last position on mouseout
-    $('.jumbotron').on('mouseout', function() {
-      $(this).css('background', 'radial-gradient(circle at ' + lastX + 'px ' + lastY + 'px, #ff0000, #0000ff)');
-    });
-  });
-  */
+
+    // Add click event listener to language toggle button
+    const toggleButton = document.getElementById('toggleButton');
+    if (toggleButton) {
+        toggleButton.addEventListener('click', () => {
+            // Toggle language and update stored preference
+            const currentLanguage = localStorage.getItem('preferredLanguage');
+            if (currentLanguage === 'english') {
+                showSpanishContent(document.querySelectorAll('.eng'), document.querySelectorAll('.spa'));
+            } else {
+                showEnglishContent(document.querySelectorAll('.eng'), document.querySelectorAll('.spa'));
+            }
+        });
+    }
+});
+
