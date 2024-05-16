@@ -22,32 +22,6 @@ espectaculativo.onclick = function (){
     };
 }
 */
-/*
-//Second language toggle
-function toggleLanguage() {
-    // Select all elements with class "english" or "spanish"
-    const languageElements = document.querySelectorAll('.eng, .spa');
-
-    // Loop through each element
-    languageElements.forEach(element => {
-        // Check the current display state of the element
-        const isSpanish = element.classList.contains('spa');
-
-        // Toggle the content based on the current display state
-        if (isSpanish) {
-            // Element is currently displaying English content, switch to Spanish
-            element.style.display = 'none'; // Hide English
-        } else {
-            // Element is currently displaying Spanish content, switch to English
-            element.style.display = 'block'; // Show English
-        }
-
-        // Toggle the class names to switch between English and Spanish
-        element.classList.toggle('eng');
-        element.classList.toggle('spa');
-    });
-}
-*/
 
 
 // English-Spanish Toggle with localStorage
@@ -67,7 +41,7 @@ function toggleLanguage() {
     }
 }
 
-/*
+
 // Function to show English content and store language preference
 function showEnglishContent(contentEnglish, contentSpanish) {
     contentEnglish.forEach(element => {
@@ -122,8 +96,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
-*/
 
+
+/*
 //Second toggle attempt snippet
 // Function to show English content and store language preference
 function showEnglishContent(contentEnglish, contentSpanish) {
@@ -188,3 +163,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+*/
