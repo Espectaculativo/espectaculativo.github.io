@@ -1,28 +1,3 @@
-/*
-//Heading Title Toggle with fade in-out effect
-let espectaculativo = document.getElementById("heading-title");
-
-espectaculativo.onclick = function (){
-    if (espectaculativo.innerHTML === 'Lucas Seamanduras') {
-        espectaculativo.classList.remove('fade-in');
-        espectaculativo.classList.add('fade-out');
-        setTimeout(function() {
-            espectaculativo.innerHTML = 'Espectaculativo🎆🪙🔮';
-            espectaculativo.classList.remove('fade-out');
-            espectaculativo.classList.add('fade-in');
-        }, 500);
-    } else {
-        espectaculativo.classList.remove('fade-in');
-            espectaculativo.classList.add('fade-out');
-            setTimeout(function() {
-                espectaculativo.innerHTML = 'Lucas Seamanduras';
-                espectaculativo.classList.remove('fade-out');
-                espectaculativo.classList.add('fade-in');
-            }, 500);
-    };
-}
-*/
-
 
 // English-Spanish Toggle with localStorage
 // Function to toggle language based on stored preference
@@ -97,6 +72,30 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+/*
+//Heading Title Toggle with fade in-out effect
+let espectaculativo = document.getElementById("heading-title");
+
+espectaculativo.onclick = function (){
+    if (espectaculativo.innerHTML === 'Lucas Seamanduras') {
+        espectaculativo.classList.remove('fade-in');
+        espectaculativo.classList.add('fade-out');
+        setTimeout(function() {
+            espectaculativo.innerHTML = 'Espectaculativo🎆🪙🔮';
+            espectaculativo.classList.remove('fade-out');
+            espectaculativo.classList.add('fade-in');
+        }, 500);
+    } else {
+        espectaculativo.classList.remove('fade-in');
+            espectaculativo.classList.add('fade-out');
+            setTimeout(function() {
+                espectaculativo.innerHTML = 'Lucas Seamanduras';
+                espectaculativo.classList.remove('fade-out');
+                espectaculativo.classList.add('fade-in');
+            }, 500);
+    };
+}
+*/
 
 /*
 //Second toggle attempt snippet
